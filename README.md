@@ -79,6 +79,6 @@ for me the IP addresses are 172.17.0.2 and 172.17.0.3
 
 You can check if they are different for you by running:
 
-```sh
+```
 docker inspect <container id> | grep "IPAddress"
 ```
