@@ -71,4 +71,14 @@ docker run -d --name music-library-api-container -p 8000:80 music-library-api-im
 
 Requests can now be made using the postman collection. Besided that the openApi specifications can be seen at localhost:8000/docs
 
+### Trouble shooting
+
+If you are getting connection errors with the DB or with Redis after dockerizing the API this could be because the docker created IP addresses that are currently hardcoded in the ./utils/const.py file are wrong
+
+for me the IP addresses are 172.17.0.2 and 172.17.0.3
+
+You can check if they are different for you by running:
+
+```sh
 docker inspect <container id> | grep "IPAddress"
+```
