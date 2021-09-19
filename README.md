@@ -48,14 +48,26 @@ before we run our tests make sure that the TESTING variable in ./utils/const.py 
 Then run the following command in the terminal.
 
 ```sh
-pytest tests
+python -m pytest tests
 ```
 
 If everything went well then all tests pass.
 
+### Running the application
+
+Before running your API backend make sure the TESTING variable in ./utils/const.py is set to False.
+
+The API application can now be run by using the following command:
+
+```
+python -m uvicorn app.main:app --reload
+```
+
+requests can be made by using the postman collection.
+
 ### Containerizing the API itself
 
-Before containerizing your API backend make sure the TESTING variable in ./utils/const.py is set to False.
+If you want to containerize the API backend, that is also possible. Make sure the TESTING variable in ./utils/const.py is set to False.
 
 The API backend can be containerized by running the following commands:
 

@@ -83,7 +83,6 @@ async def db_get_artists_of_genre(genre):
     select distinct artist from song where genre=:genre
     """
     values = {"genre": genre}
-    print("test1")
     return await fetch(query, False, values)
 
 
