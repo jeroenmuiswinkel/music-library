@@ -14,7 +14,11 @@ docker run --name=music-db-container -e POSTGRES_USER=admin -e POSTGRES_PASSWORD
 
 after the database container is running, we can add data to the container by running a python script that can be found in the music-library-data-ingestion repo.
 
-Clone the code from that library and run main.py
+Clone the code from that library, install the dependencies and run main.py:
+
+```sh
+pip install -r requirements.txt
+```
 
 ```sh
 python -m main
@@ -45,7 +49,11 @@ Now that both the database is running and filled with data, we can run our tests
 
 before we run our tests make sure that the TESTING variable in ./utils/const.py is set to True
 
-Then run the following command in the terminal.
+Then run the following commands in the terminal:
+
+```sh
+pip install -r requirements.txt
+```
 
 ```sh
 python -m pytest tests
