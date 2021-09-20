@@ -1,6 +1,5 @@
 import asyncio
 
-import pytest
 from app.main import app
 from database.db_functions import execute, fetch
 from database.db_object import db

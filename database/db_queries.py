@@ -88,7 +88,7 @@ async def db_get_artists_of_genre(genre):
 
 async def db_artist_id_exists(id):
     query = """
-    select * from artist where id = :id
+    select * from artist where id=:id
     """
     values = {"id": id}
     result = await fetch(query, True, values)

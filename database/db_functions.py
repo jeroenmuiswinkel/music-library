@@ -1,5 +1,3 @@
-from utils.const import TESTING
-
 from database.db_object import db
 
 

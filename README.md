@@ -63,7 +63,7 @@ If everything went well then all tests pass.
 
 ### Running the application
 
-Before running your API backend make sure the TESTING variable in ./utils/const.py is set to False.
+Before running your API backend make sure the TESTING variable in ./utils/const.py is set to True.
 
 The API application can now be run by using the following command:
 
